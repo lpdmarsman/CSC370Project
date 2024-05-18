@@ -1,0 +1,70 @@
+﻿Alexander Williams V01042108
+Claire Lu V01025865
+Howie Lo V00984847
+
+Stuff to have for a wiki: 
+Articles
+* Title
+* Content
+* Tags
+* Subcategories
+* Metadata
+* Changelog
+* Page ID
+
+Users
+* userId
+* Admin 
+
+Overarching genres
+Articles in the genres
+Planning Scope
+For our next sprint, we plan on drawing our entity relationship diagram ERD and start implementing the tables into our database
+
+
+Fantasy world wiki
+Setting of the world
+background/history
+Locations
+character/npc information (who’s dead) (what group they’re in)
+flora/fauna
+
+
+
+SCOPE FOR NOW
+Monsters, location, adventurers
+
+
+________________
+Delivery Scope
+Module lvl goals
+How to learn?
+Beneficial because there’s a lot of room for expansions, so we can apply things as we learn them. Lots of flexibility in creation/format
+
+
+Things have direct relations to each other, so 
+
+
+Study plan - 
+Meet every monday at 1 and fridays at 2:30 to discuss the project
+
+
+
+
+Course lvl goals
+Use
+How to apply the skills we learn through the project to outside of this course
+
+
+
+
+Managing people’s statuses
+Understanding the world
+Keeping track of relationships
+Identify goal for people to achieve
+Learn how to manage different groups 
+
+
+What do with it 
+Creating a game
+Running a guild
