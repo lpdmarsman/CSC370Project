@@ -1,0 +1,16 @@
+Article
+- Title
+- Content
+- Page ID KEY
+- Metadata (edit dates, editors)
+- Changelog
+
+Users
+- user ID KEY
+- Admin status
+- Edited articles
+
+Relation between users and Articles based on article/editor
+
+Tags as an attribute of Articles, 
+or tags as their own entity that links to each article?
