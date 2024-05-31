@@ -1,0 +1,6 @@
+﻿monsters,int,monster_name,monster_type,
+items,int,item_category,item_name,
+locations,int,location_name,location_category,
+guilds,int,guild_name,,
+players,int,username,online_status,role
+burt,,,,
