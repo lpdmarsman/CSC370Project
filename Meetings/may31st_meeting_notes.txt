@@ -18,3 +18,7 @@ how are we meeting course-lvl competencies?
 Alex: show off the ERD 
 Howie: show the tables and values
 Claire: go over next sprint's goals
+
+
+For next sprint we will be adding foreign keys to demonstrate complex SQL queries.
+We are meeting the data architect course-lvl competency by creating the ERD and using mySQL to create a database with tables, then normalizing these tables in the database.
