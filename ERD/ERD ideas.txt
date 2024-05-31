@@ -1,0 +1,20 @@
+Link to the ERD on Google Drawings:
+https://docs.google.com/drawings/d/1aHXt5h1kC6mVuj8ZPk5FfZqZ9uCuoyYIZqKVM1mpcWw/edit?usp=sharing
+
+
+Article
+- Title
+- Content
+- Page ID KEY
+- Metadata (edit dates, editors)
+- Changelog
+
+Users
+- user ID KEY
+- Admin status
+- Edited articles
+
+Relation between users and Articles based on article/editor
+
+Tags as an attribute of Articles, 
+or tags as their own entity that links to each article?

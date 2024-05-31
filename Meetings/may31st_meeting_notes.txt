@@ -1,0 +1,20 @@
+meeting notes
+
+this sprint:
+  creating ERD
+  creating tables
+  entering data
+  
+next sprint:
+  foreign keys
+  complex queries
+
+how are we meeting course-lvl competencies?
+- data architect
+    creating the ERD/tables/database
+    normalizing database/tables
+
+
+Alex: show off the ERD 
+Howie: show the tables and values
+Claire: go over next sprint's goals
