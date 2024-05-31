@@ -1,0 +1,58 @@
+CREATE TABLE `monsters` (
+`mon_id` int,
+`mon_name` varchar(64),
+`mon_type` varchar(64),
+PRIMARY KEY (mon_id)
+);
+
+CREATE TABLE `items` (
+`item_id` INT,
+`item_name` VARCHAR(64),
+`item_category` VARCHAR(64),
+PRIMARY KEY (item_id)
+);
+
+CREATE TABLE `locations` (
+`loc_id` INT,
+`loc_name` VARCHAR(64),
+`loc_category` VARCHAR(64),
+PRIMARY KEY (loc_id)
+);
+
+CREATE TABLE `guilds` (
+`guild_id` INT,
+`guild_name` VARCHAR(64),
+`loc_id` INT,
+PRIMARY KEY (guild_id)
+);
+
+CREATE TABLE `players` (
+`player_id` INT,
+`username` VARCHAR(64),
+`is_online` BOOLEAN,
+`char_status` VARCHAR(64),
+`loc_id` VARCHAR(64), 
+`guild_role` VARCHAR(64),
+`guild_id` INT,
+PRIMARY KEY (player_id)
+);
+
+CREATE TABLE `drops` (
+`item_id` INT,
+`mon_id` INT,
+`drop_rate` FLOAT(3, 2),
+PRIMARY KEY (item_id)
+);
+
+CREATE TABLE `mon_found_in` (
+`mon_id` INT,
+`loc_id` INT,
+PRIMARY KEY (mon_id)
+);
+
+CREATE TABLE `player_items` (
+`player_id` INT,
+`item_id` INT,
+`item_count` INT,
+PRIMARY KEY (player_id)
+);
