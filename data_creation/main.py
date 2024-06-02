@@ -2,6 +2,8 @@
 The purpose of this file is to create a method that allows us to add data
 into our mySQL database. This program was mainly designed and intended to be 
 used for our CSC 370 project, but can be used for other reasons if you want.
+All of the data is randomised essentially, additionally to use this application
+the "sheet_directory.csv" needs to follow a format I have probably not documented.
 
 Author: Howie Lo (V00984847)
 """
@@ -9,6 +11,7 @@ Author: Howie Lo (V00984847)
 import sys
 import random
 import os
+import random
 
 
 def print_files_in_project_directory(directory):
@@ -26,44 +29,103 @@ def print_files_in_project_directory(directory):
 directory_path = "data"  # Specify the directory relative to the project file
 print_files_in_project_directory(directory_path)
 
+def get_file_content(file: str) -> list[str]:
+    outcome = []
+    with open(f"data/{file}.csv") as content:
+        for line in content:
+            outcome.append(line.strip())
+    return outcome
+
+
 
 """
-This function should return a list of file names, they should be in the same 
-relative path in the project.
-The function reads from a main excel file titled "sheet_directory" and from
-that file it reads the sheets in the order posted, that way we can grab data
-from those file and create a new .csv file to insert into our database.
-I could probably insert the data directory into the database, but creating a 
-.csv file makes it easier to store on other systems without having to makesure
-we all connect to the smae database.
+Retrieves the table names we want, and the files we need to open in order to 
+create the table data.
 """
-def retrieve_files() -> tuple:
+def retrieve_files() -> list[dict]:
     temp_list = []
+    ret_list = []
     #why is it xlsx and not a csv, even though I specified as such.
     with open("data/sheet_directory.csv") as file:
-        file.readline()
+        #file.readline()
         for line in file:
-            temp_list.append(line.strip())
-    return tuple(temp_list)
+            line = line.replace("\ufeff", "")
+            line = line.replace("\n", "")
+            line = line.replace("ï»¿", "")
+            line = line.strip()
+            temp_list = line.split(",")
+            print(temp_list)
+            #split first val so we can tell if its a "main_table" or a "join_table"
+            check = temp_list[0]
+            check = check.split(":")
+            if check[0] == "main_table":
+                #We grab our table name, and the lest of the values to insert
+                #Kind of a jank function but it works and is quick
+                ret_list.append({check[1]: temp_list[1:]})
+
+    print(ret_list)
+    return ret_list
 
 """
-function to create the files listed in sheet directory following a format.
-Skips the first 2 columns as those should be left for the table name, and the primary
-key (typircally a int)
+This function takes a dict, following our specified format and then proceeds to create a
+.csv file containing the data we want. The only issue is that for any ids that
+use referential values they will be out of bounds. So when you insert it into
+your database remember to update those values.
 """
-def create_csv():
-    with open("data/sheet_directory.csv") as file:
-        for line in file:
-            input_string = line
-            # Split the string by commas and remove any empty strings
-            split_list = [item.strip() for item in input_string.split(',') if item]
+def create_csv(data: dict) -> None:
+    #All these values are hard coded to be in the range of 100
+    #Increase to create more data
+    for title in data:
+        columns = data[title]
+        print(title)
+        order_int = [number for number in range(100)]
+        ran_int = [number for number in range(100)]
+        bool_int = [number%2 for number in range(100)]
+        random.shuffle(ran_int)
+        
+        
+        content = []
+        """
+        opening our file so we can write our data
+        """
+        with open(f"data/addInto{title}.csv", mode="w") as new_file:
+            column_count = 0
+            for input_string in columns:
+                # Split the string by commas and remove any empty strings
+                if (input_string != ""):
+                    print(input_string)
+                    input_string = input_string.split(":")
+                    
+                    if input_string[0] == "int":
+                        if column_count == 0:
+                            column_count = 1
+                            content.append(order_int)
+                        else:
+                            content.append(ran_int)
+                    elif input_string[0] == "string":
+                        content.append(get_file_content(input_string[1]))
+                    elif input_string[0] == "bool":
+                        content.append(bool_int)
+                        
+            for row in range(100):
+                line_to_write = ""
+                for insert_data in content:
+                    line_to_write += str(insert_data[row % len(insert_data)]) + ","
+                new_file.write(line_to_write[:-1] + "\n")
+                
             
-            # Select the desired items
-            result_list = split_list[2:-1]
-            print(result_list)
-            for file_name in result_list:
-                with open(f"data/{file_name}.csv", mode="w") as new_file:
-                    print(file_name)
+                        
+                    
+                #split_list = [item for item in input_string.split(',') if item != ""]
+                
+                # Select the desired items
+                #result_list = split_list
+                #print(result_list)
+        """
+        for file_name in result_list:
+            with open(f"data/{file_name}.csv", mode="w") as new_file:
+                print(file_name)
+                """
     
 
 
@@ -73,11 +135,19 @@ data creation script is going to be simple and I don't really feel like fixing
 my own systems configuration.
 """
 def main(args: list[str]=["hm"]) -> None:
-    print(retrieve_files())
+    #print(retrieve_files())
+    #print("fork")
+    #help(random)
+    pass
     
 
 if __name__ == '__main__':
+    random.seed(1)
     main()
-    print(sys.argv[1:])
-    create_csv()
+    #print(sys.argv[1:])
+    files = retrieve_files()
+    #get_file_content("username")
+    for file in files:
+        create_csv(file)
+    #create_csv()
     #sys.argv[1:]

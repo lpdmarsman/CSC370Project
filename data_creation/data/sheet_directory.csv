@@ -1,6 +1,8 @@
-﻿monsters,int,monster_name,monster_type,
-items,int,item_category,item_name,
-locations,int,location_name,location_category,
-guilds,int,guild_name,,
-players,int,username,online_status,role
-burt,,,,
+﻿join_table:drops,int:drop_id,int:item_id,int:monster_id,float:drop_rate,,,
+main_table:guilds,int:guild_id,string:guild_name,int:location_id,,,,
+main_table:items,int:item_id,string:item_name,string:item_category,,,,
+main_table:locations,int:location_id,string:location_name,string:location_category,,,,
+join_table:monster_found_in,int:monster_id,int:location_id,,,,,
+main_table:monsters,int:monster_id,string:monster_name,string:monster_type,,,,
+join_table:player_items,int:player_id,int:item_id,int:item_count,,,,
+main_table:players,int:player_id,string:username,bool:is_online,string:char_status,int:location_id,string:guild_role,int:guild_id
