@@ -1,0 +1,6 @@
+For next sprint, we will be adding creating data for the relation tables, foreign keys to the database, and demonstrating complex SQL queries.
+We can show that the foreign keys are correctly implemented by showing that we are unable to add data that should not exist and that we cannot remove data that relies on a foreign key. By using aggregation and sub-queries, we demonstrate SQL queries with complex logic.
+
+We are meeting the level 2 data modelling course-lvl competency by creating the ERD and using mySQL to create a database with normalized tables.
+
+We will be meeting the level 2 competency of data analyst by showing our use of complex queries and understanding of functional dependencies by using foreign keys to keep the data normalized.
