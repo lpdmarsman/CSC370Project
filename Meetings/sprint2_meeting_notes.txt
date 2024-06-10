@@ -1,0 +1,21 @@
+creating complex queries
+adding data to relation tables
+foreign keys
+  - update existing data to accept foreign keys
+    - change guild data
+    - increase player count
+    - decrease locations
+
+
+
+next sprint 
+  - creating users and handling permissions.
+  - ACID transactions
+  - consolidate ideas on friday
+  - index 
+
+
+
+Alex - complex SQL queries
+Howie - update the data
+Claire - add foreign keys
