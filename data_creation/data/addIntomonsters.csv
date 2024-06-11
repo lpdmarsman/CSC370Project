@@ -1,100 +1,75 @@
-0,username,Fire
-1,usjbvkai,Water
-2,hvwndebo,Normal
-3,fcizuklg,Dark
-4,rzepkntw,Magic
-5,rpgfnimu,Electric
-6,zextnbhj,Undead
-7,fwicvnus,Ice
-8,zomnlbhu,Fire
-9,tfigrkpv,Water
-10,qlhmukcn,Normal
-11,ijyxgdar,Dark
-12,qubitrnl,Magic
-13,slvxhrye,Electric
-14,tfgnulvq,Undead
-15,hbwfmdoc,Ice
-16,jfmvgela,Fire
-17,qwmjzdra,Water
-18,arwdbjhl,Normal
-19,ezfvycsm,Dark
-20,srwmogbt,Magic
-21,mivqxkbl,Electric
-22,wmyruojd,Undead
-23,kwbulpjf,Ice
-24,zktfnvgi,Fire
-25,xrnlkzsm,Water
-26,vmgelupq,Normal
-27,qvnltrzj,Dark
-28,tkfgwopn,Magic
-29,odjuwvnp,Electric
-30,usjfvarc,Undead
-31,rnpiqtgj,Ice
-32,zhfjvicm,Fire
-33,svjfxmgu,Water
-34,cgmrnbik,Normal
-35,wblyzkxn,Dark
-36,kbnrwfvp,Magic
-37,emxljcvp,Electric
-38,pnimjorg,Undead
-39,svguylko,Ice
-40,fyblrmqj,Fire
-41,wbuxrjvh,Water
-42,lmngvcuj,Normal
-43,vqoxlhtb,Dark
-44,tlzjwpxc,Magic
-45,ylxskhvi,Electric
-46,dnvphmou,Undead
-47,wqcaynbj,Ice
-48,xlrjfmkv,Fire
-49,smizqudn,Water
-50,tnfqroli,Normal
-51,gbmxwrqj,Dark
-52,vjwhzfnl,Magic
-53,mltrvcpk,Electric
-54,exoytuvr,Undead
-55,jzvtlwho,Ice
-56,yxuzrmld,Fire
-57,rtvqlkos,Water
-58,tmbwpihn,Normal
-59,fnmlkbej,Dark
-60,qfglnmuv,Magic
-61,prjibzfh,Electric
-62,zlrjwqoe,Undead
-63,slvmqzpn,Ice
-64,uxwdlphe,Fire
-65,lrgktnvm,Water
-66,ojwknzlh,Normal
-67,dxybqkmu,Dark
-68,tnlfvszp,Magic
-69,jmwkcphb,Electric
-70,yhfvrntp,Undead
-71,lgxbkpmv,Ice
-72,mkpvquzt,Fire
-73,oibgmxnv,Water
-74,fhwpzuqe,Normal
-75,smukyeow,Dark
-76,hiflxnbv,Magic
-77,lmwnkfvq,Electric
-78,byzuxndv,Undead
-79,mxwvzjbp,Ice
-80,snwbvjul,Fire
-81,olvgfbnp,Water
-82,vzfmkwyl,Normal
-83,wgjnklvx,Dark
-84,zdybwrpm,Magic
-85,ptzlokgn,Electric
-86,vgxuynqr,Undead
-87,zfhknxlg,Ice
-88,twjyuvni,Fire
-89,ulphfzmq,Water
-90,jqafrynx,Normal
-91,slvrgkjo,Dark
-92,zrtbopwi,Magic
-93,bqzwpvuk,Electric
-94,nkfbyjrw,Undead
-95,lbnuipmv,Ice
-96,oefzjknq,Fire
-97,pwvfbknt,Water
-98,username,Normal
-99,usjbvkai,Dark
+0,Abyssal Wyrm,Water
+1,Blightshade,Normal
+2,Crimson Fang,Dark
+3,Deathclaw,Magic
+4,Ember Drake,Electric
+5,Frostbite,Undead
+6,Gloomstalker,Ice
+7,Hellfire Brute,Fire
+8,Icehowl,Water
+9,Jadespine,Normal
+10,Kraken Maw,Dark
+11,Lava Serpent,Magic
+12,Mirelurker,Electric
+13,Nightstalker,Undead
+14,Obsidian Golem,Ice
+15,Phantom Wraith,Fire
+16,Quicksilver Specter,Water
+17,Ravager,Normal
+18,Shadowfiend,Dark
+19,Thunderhoof,Magic
+20,Umbral Beast,Electric
+21,Venomspitter,Undead
+22,Warhound,Ice
+23,Xenoscythe,Fire
+24,Zephyr Hawk,Water
+25,Arcane Reaver,Normal
+26,Bloodbane,Dark
+27,Cinderbeast,Magic
+28,Doomcrawler,Electric
+29,Elderroot,Undead
+30,Feralshade,Ice
+31,Grimfang,Fire
+32,Hexweaver,Water
+33,Ironclad Juggernaut,Normal
+34,Jinxspawn,Dark
+35,Kobold King,Magic
+36,Lich Lord,Electric
+37,Moonghast,Undead
+38,Netherdrake,Ice
+39,Oathbreaker,Fire
+40,Plaguebearer,Water
+41,Quagmire Stalker,Normal
+42,Rockhide,Dark
+43,Sandstorm,Magic
+44,Tundra Wolf,Electric
+45,Vilethorn,Undead
+46,Wraithcaller,Ice
+47,Xenobeast,Fire
+48,Zealotfiend,Water
+49,Ashen Fiend,Normal
+50,Brimstone Demon,Dark
+51,Chaos Hydra,Magic
+52,Dreadmaw,Electric
+53,Emberclaw,Undead
+54,Frostwyrm,Ice
+55,Gorgonite,Fire
+56,Harbinger,Water
+57,Inferno Titan,Normal
+58,Jotun,Dark
+59,Kraghammer,Magic
+60,Leviathan,Electric
+61,Molten Fury,Undead
+62,Nighthowler,Ice
+63,Onyx Sentinel,Fire
+64,Pyromancer,Water
+65,Quicksand Stalker,Normal
+66,Runic Guardian,Dark
+67,Stormbringer,Magic
+68,Toxic Hydra,Electric
+69,Voidwalker,Undead
+70,Windripper,Ice
+71,Yeti,Fire
+72,Zephyr Dragon,Water
+73,Arcanist,Normal
+74,Bloodthirster,Dark
