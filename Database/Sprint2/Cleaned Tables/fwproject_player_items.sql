@@ -1,0 +1,51 @@
+-- MySQL dump 10.13  Distrib 8.0.36, for Win64 (x86_64)
+--
+-- Host: localhost    Database: fwproject
+-- ------------------------------------------------------
+-- Server version	8.0.37
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!50503 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `player_items`
+--
+
+DROP TABLE IF EXISTS `player_items`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `player_items` (
+  `player_id` int NOT NULL,
+  `item_id` int DEFAULT NULL,
+  `item_count` int DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `player_items`
+--
+
+LOCK TABLES `player_items` WRITE;
+/*!40000 ALTER TABLE `player_items` DISABLE KEYS */;
+INSERT INTO `player_items` VALUES (0,3,54),(1,4,122),(2,4,49),(3,7,22),(4,0,99),(5,15,36),(6,19,33),(7,13,103),(8,8,60),(9,8,12),(10,9,83),(11,16,34),(12,12,108),(13,3,4),(14,6,71),(15,10,70),(16,2,84),(17,2,105),(18,11,114),(19,15,143),(20,10,13),(21,18,95),(22,4,51),(23,8,40),(24,16,140),(25,9,132),(26,1,87),(27,1,127),(28,19,106),(29,1,2),(30,13,24),(31,8,72),(32,17,58),(33,10,44),(34,7,17),(35,16,141),(36,19,18),(37,17,7),(38,9,80),(39,18,20),(0,14,142),(1,16,116),(2,5,21),(3,11,35),(4,11,27),(5,17,57),(6,18,109),(7,14,74),(8,13,90),(9,6,104),(10,6,76),(11,19,148),(12,11,61),(13,12,89),(14,13,125),(15,13,133),(16,8,0),(17,2,97),(18,0,56),(19,2,62),(20,5,47),(21,17,63),(22,8,81),(23,12,19),(24,18,102),(25,2,78),(26,6,50),(27,1,31),(28,8,28),(29,5,30),(30,2,5),(31,19,93),(32,16,145),(33,7,25),(34,4,9),(35,18,147),(36,14,67),(37,15,131),(38,4,126),(39,1,92),(0,2,38),(1,11,46),(2,14,86),(3,9,73),(4,5,64),(5,3,23),(6,14,115),(7,9,139),(8,0,29),(9,4,107),(10,9,146),(11,15,52),(12,10,128),(13,5,88),(14,11,16),(15,0,8),(16,19,123),(17,7,129),(18,10,15),(19,3,149),(20,14,10),(21,15,135),(22,2,26),(23,6,112),(24,16,119),(25,4,75),(26,17,120),(27,5,43),(28,17,41),(29,15,118),(30,0,48),(31,10,39),(32,3,124),(33,9,94),(34,13,69),(35,6,96),(36,3,32),(37,11,1),(38,0,136),(39,18,100),(0,5,111),(1,4,45),(2,6,14),(3,1,82),(4,7,6),(5,15,55),(6,12,110),(7,13,98),(8,0,37),(9,0,85),(10,18,121),(11,12,53),(12,17,113),(13,5,130),(14,8,59),(15,3,91),(16,19,137),(17,1,117),(18,12,11),(19,1,3),(20,7,79),(21,3,65),(22,16,66),(23,9,138),(24,14,101),(25,6,144),(26,7,77),(27,12,134),(28,7,68),(29,10,42);
+/*!40000 ALTER TABLE `player_items` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2024-06-14 16:25:29
