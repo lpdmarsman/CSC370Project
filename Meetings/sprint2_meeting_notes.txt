@@ -1,19 +1,25 @@
-creating complex queries
-adding data to relation tables
-foreign keys
-  - update existing data to accept foreign keys
-    - change guild data
-    - increase player count
-    - decrease locations
-
-
+this sprint
+  - adding data to relation tables
+  - update existing data to prepare for foreign keys
+    - data values were adjusted to better reflect realistic proportions
+  - added foreign keys 
+    - cascade vs null (still needs to be done - claire)
+  - creating complex queries
 
 next sprint 
   - creating users and handling permissions.
   - ACID transactions
-  - consolidate ideas on friday
-  - index 
+    - how to remove a player
+  - create indexing
+    - status
+  - create views
 
+competencies
+  - sprint 2
+    - (pull from last video) (condense)
+  - sprint 3
+    - lvl 1 back-end engineering 
+    - lvl 2 back-end engineering 
 
 
 Alex - complex SQL queries

@@ -1,0 +1,19 @@
+For sprint 2, we added our data to the relation tables and then updated the data to add foreign keys. This covers lvl 1 of data modelling and data analytics. We then made complex queries to show that the foreign keys were implemented correctly. 
+
+(breathe)
+
+We designed our foreign keys to act appropriately based on what data is being deleted; for example, if a location is deleted, location_id in the table monster_found_in would be set to NULL, however if a monster is deleted, the data deletion cascades instead. This covers the lvl 2 data modelling and data analytics.
+
+
+next sprint 
+  - creating users and handling permissions.
+  - ACID transactions
+    - how to remove a player
+  - create indexing
+    - status
+  - create views
+
+competencies
+  - sprint 3
+    - lvl 1 back-end engineering 
+    - lvl 2 back-end engineering 
