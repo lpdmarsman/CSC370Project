@@ -1,20 +1,25 @@
 ALTER TABLE `Drops`
-ADD FOREIGN KEY (item_id) REFERENCES items(item_id); 
+ADD FOREIGN KEY (item_id) REFERENCES items(item_id)
+ON DELETE CASCADE;
 ALTER TABLE `Drops`
-ADD FOREIGN KEY (monster_id) REFERENCES monsters(monster_id); 
+ADD FOREIGN KEY (monster_id) REFERENCES monsters(monster_id)
+ON DELETE SET NULL;
 
 ALTER TABLE `Guilds`
-ADD FOREIGN KEY (location_id) REFERENCES locations(location_id); 
+ADD FOREIGN KEY (location_id) REFERENCES locations(location_id)
+ON DELETE SET NULL;
 
 ALTER TABLE `monster_found_in`
-ADD FOREIGN KEY (location_id) REFERENCES locations(location_id); 
+ADD FOREIGN KEY (location_id) REFERENCES locations(location_id)
+ON DELETE SET NULL;
 
 ALTER TABLE `player_items`
-ADD FOREIGN KEY (item_id) REFERENCES items(item_id); 
+ADD FOREIGN KEY (item_id) REFERENCES items(item_id)
+ON DELETE CASCADE;
 
 ALTER TABLE `players`
-ADD FOREIGN KEY (guild_id) REFERENCES guilds(guild_id); 
+ADD FOREIGN KEY (guild_id) REFERENCES guilds(guild_id)
+ON DELETE SET NULL;
 ALTER TABLE `players`
-ADD FOREIGN KEY (location_id) REFERENCES locations(location_id); 
-
-cascade
+ADD FOREIGN KEY (location_id) REFERENCES locations(location_id)
+ON DELETE SET NULL;
