@@ -55,5 +55,4 @@ CREATE TABLE `player_items` (
 `player_id` INT,
 `item_id` INT,
 `item_count` INT,
-PRIMARY KEY (player_id)
 );
