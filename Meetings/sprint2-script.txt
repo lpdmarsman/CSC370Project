@@ -4,6 +4,9 @@ For sprint 2, we added our data to the relation tables and then updated the data
 
 We designed our foreign keys to act appropriately based on what data is being deleted; for example, if a location is deleted, location_id in the table monster_found_in would be set to NULL, however if a monster is deleted, the data deletion cascades instead. This covers the lvl 2 data modelling and data analytics.
 
+-Howie
+
+For our 3rd sprint, we will be meeting Level 3 Data Analytics by creating indexs for columns we identify in order to accelerate queries. Additionally, we will be meeting both level 1 and 2 of back-end engineering. To meet level 1 we will be creating transactions to batch queries we believe would be made on our database. Additionally, to meet level 2 of back-end engineering we will be creating users, and identifying the privlegges conerred to each user, and creating views to regulate access to our data and ensure better data privacy and governance.
 
 next sprint 
   - creating users and handling permissions.
