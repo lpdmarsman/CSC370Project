@@ -1,0 +1,22 @@
+sprint 3:
+- Claire
+  - new folder for users and permissions
+  - make "god" user with easy password
+    - anything goes
+  - admin
+    - "god" but not
+  - generic player permissions
+    - view access only: guild list, other player usernames, monsters and locations, items
+  - monster
+    - view drop rate, location, items, monsters (itself)
+
+- Alex
+  - acid transactions
+
+- Howie
+  - views
+
+
+
+random notes:
+  - make the monsters the mc and take over the world?
