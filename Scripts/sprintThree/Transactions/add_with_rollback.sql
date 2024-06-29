@@ -18,6 +18,6 @@ FROM `monsters`
 NATURAL JOIN `drops`
 NATURAL JOIN `monster_found_in`
 WHERE `monster_id` = 58;
-
-ROLLBACK;
+COMMIT;
+-- ROLLBACK;
 # change to commit if result is correct

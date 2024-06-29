@@ -17,8 +17,8 @@ WHERE `monster_id` = 58;
 COMMIT;
 
 # Command here to show monster is deleted
-select *
-from monsters
-natural join drops
-natural join monster_found_in
-order by monster_id desc;
+SELECT *
+FROM `monsters`
+NATURAL JOIN `drops`
+NATURAL JOIN `monster_found_in`
+WHERE `monster_id` = 58;

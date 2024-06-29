@@ -1,6 +1,7 @@
--- CREATE VIEW monster_names AS
- SELECT monster_name
- FROM monsters;
+-- Here we view all monster names
+CREATE VIEW monster_names AS
+SELECT monster_name
+FROM monsters;
 
 -- Here we view all the monsters, and the locations they are found in
 CREATE VIEW view_monster_locations AS
