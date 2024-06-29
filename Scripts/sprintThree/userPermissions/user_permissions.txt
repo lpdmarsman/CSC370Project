@@ -1,0 +1,26 @@
+CREATE USER 'GOD'@'localhost' IDENTIFIED WITH mysql_native_password BY 'godpw';
+CREATE USER 'ADMIN'@'localhost' IDENTIFIED WITH mysql_native_password BY 'adminpw';
+CREATE USER 'PLAYER'@'localhost' IDENTIFIED WITH mysql_native_password BY 'playerpw';
+CREATE USER 'MONSTER'@'localhost' IDENTIFIED WITH mysql_native_password BY 'monsterpw';
+
+GRANT ALL PRIVILEGES ON `370proj`.* TO 'GOD'@'localhost' WITH GRANT OPTION;
+
+ -- ADMIN can see all tables and views
+GRANT SELECT ON `370proj`.* TO 'ADMIN'@'localhost';
+ -- insert, update, delete on player related tables
+GRANT INSERT, UPDATE, DELETE ON `370proj`.`players` TO 'ADMIN'@'localhost';
+GRANT INSERT, UPDATE, DELETE ON `370proj`.`player_items` TO 'ADMIN'@'localhost';
+GRANT INSERT, UPDATE, DELETE ON `370proj`.`guilds` TO 'ADMIN'@'localhost';
+ -- insert, update, delete on player related views
+ GRANT INSERT, UPDATE, DELETE ON `370proj`.`currently_owned_items` TO 'ADMIN'@'localhost';
+
+ -- PLAYER can see monsters locations and items
+GRANT SELECT ON `370proj`.`view_monster_drops` TO 'PLAYER'@'localhost';  -- view
+GRANT SELECT ON `370proj`.`view_monster_locations` TO 'PLAYER'@'localhost';  -- view
+GRANT SELECT ON `370proj`.`locations` TO 'PLAYER'@'localhost';
+GRANT SELECT ON `370proj`.`items` TO 'PLAYER'@'localhost';
+
+ -- MONSTER can see all monster related tables and views
+GRANT SELECT ON `370proj`.`view_monster_drops` TO 'MONSTER'@'localhost';  -- view
+GRANT SELECT ON `370proj`.`view_monster_locations` TO 'MONSTER'@'localhost';  -- view
+GRANT SELECT ON `370proj`.`drops` TO 'MONSTER'@'localhost';

@@ -1,3 +1,18 @@
+sprint 4:
+ - weak entity sets and subsets
+   - equipment
+   - bosses
+   - tables + data for these
+ - isolation levels 
+   - live explanation
+ - arguing for good quality design
+ - prove minimality (?)
+   - projecting functional dependencies and minimal bases
+ - advanced scripts
+   - "We will try to cover using triggers, ternary logic, and simplifying queries for next sprint based on what is written in the module overview. As this has yet to be covered in lecture, results may differ from plan."
+
+
+
 sprint 3:
 - Claire
   - new folder for users and permissions
@@ -5,6 +20,7 @@ sprint 3:
     - anything goes
   - admin
     - "god" but not
+    - makes sure people aren't cheating (?)
   - generic player permissions
     - view access only: guild list, other player usernames, monsters and locations, items
   - monster
@@ -15,8 +31,3 @@ sprint 3:
 
 - Howie
   - views
-
-
-
-random notes:
-  - make the monsters the mc and take over the world?
