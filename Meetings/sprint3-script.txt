@@ -1,0 +1,18 @@
+For sprint three, we created views for more useable information access and to manage permission access. We also created users and granted permissions to them on both tables and views based on generic levels of authority. We then demonstrated transactions that we thought would be commonly used, which allows for a monster's information to be deleted atomically and prevents durability violations. This covers levels 1 and 2 of back end engineering.
+
+
+For next sprint, we will be improving on the isolation of transactions based on the nature of the transaction. we will demonstrate this by writing SQL code and argue why we set the isolation level as such, we will also be adding weak entity sets and subsets to the ERD, by updating our current model and diagram, as well as arguing for the quality of our design, and trying to demonstrate advanced scripts such as using triggers, ternary logic, and simplifying queries. This will also be demonstrated with SQL scripts we will execute on our database. As this last part has yet to be covered in lecture, we are unsure if it can be done in time. These goals will cover level 2 of back-end engineering, levels 2 and 3 of data modelling, and level 3 data analytics.
+
+
+
+
+For next sprint:
+improve isolation of transactions based on use case
+ - lvl 2 back end engineering
+add weak entity sets and subsets to ERD
+ - lvl 3 data modelling
+quality design
+ - lvl 2 data modelling
+possibly advanced scripts
+ - "We will try to cover using triggers, ternary logic, and simplifying queries for next sprint based on what is written in the module overview. As this has yet to be covered in lecture, results may differ from plan."
+ - lvl 3 data analytics
