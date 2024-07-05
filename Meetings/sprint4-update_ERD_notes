@@ -1,0 +1,20 @@
+ - weak entity sets and subsets
+ subsets
+   - equipment
+        (armor, weapon, accessory), item_id PRIMARY KEY
+   - bosses
+        title, moneter_id PRIMARY KEY, backstory VARCHAR[2000] (text???) is_miniboss, attacks_on_sight
+
+
+   tables + data for these
+
+
+weak entity set
+    player_role
+        has player_id, and guild_role, key is player_id
+        access to <blank> roles (kick from guild, armory, accpt/refuse/invite, change roles)
+    buildings subset locations
+        (shop, mcDonalds, library, inn, training_center, blacksmith), building_name, location_id PRIMARY KEY
+
+subset:
+    primary key of subclass is primary key of superclass
