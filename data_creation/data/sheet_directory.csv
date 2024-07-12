@@ -6,3 +6,6 @@ join_table:monster_found_in,int:monster_id,int:location_id,,,,,
 main_table:monsters:75,int:monster_id,string:monster_name,string:monster_type,,,,
 join_table:player_items,int:player_id,int:item_id,int:item_count,,,,
 main_table:players:40,int:player_id,string:username,bool:is_online,string:char_status,int:location_id,string:guild_role,int:guild_id
+main_table:buildings:23,int:location_id,string:building_type,string:building_name,,,,
+main_table:boss_monsters:10,int:monster_id,string:title,bool:is_miniboss,bool:attacks_on_sight,,,
+main_table:equipment:5,int:item_id,string:equipment_type,,,,,

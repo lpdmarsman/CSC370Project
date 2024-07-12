@@ -1,0 +1,24 @@
+Completeness:
+  All features are included in the Database that are referenced in the ERD, which fulfills all requirements for our application
+
+Correctness:
+  all related entities are generalized where possible, all remaining entities are distinct and cannot be generalized any further. All entity sets are important and cannot be replaced by attributes. All relations have an appropriate number of connected entities. All entities have an identifier
+
+Minimality: REMOVE PLAYERS.GUILD_ROLE
+  No attribute or entity can be removed without losing information, so the database is minimal. To ensure it remained minimal this sprint, we removed player.guild_role when creating the guild_role table
+
+
+Expressiveness
+  All requirements and restrictions are logical, and do not need futher explanation to understand. Since we  reated the requirements and needs, we have decided this fits them perfectly
+
+Readability:
+  The ERD does not contain any bent or overlapping lines, and all children are below their parent entities. Where possible, attributes are grouped close together to ensure clarity of which entity they belong to
+
+Self-Explanation:
+  All attributes and entities are named in such a way to accurately represent the information they contain
+
+Extinsibility:
+  As all different elements are separated into their own entities, it is very easy to edit specific information without affecting the rest of the database. This was demonstrated with our addition of four new tables into the ERD with minimal changes to the rest of the database.
+
+Normality:
+  we made the tables in such a way that each entity has an Id as its single functional dependency, as such all other attributes cannot functionally determine the ID of any entity
