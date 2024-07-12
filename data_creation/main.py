@@ -186,5 +186,6 @@ if __name__ == '__main__':
     #get_file_content("username")
     for file in files:
         create_csv(file)
+    print("yea it works")
     #create_csv()
     #sys.argv[1:]
