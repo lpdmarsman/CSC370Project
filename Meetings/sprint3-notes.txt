@@ -10,6 +10,12 @@ sprint 4:
    - projecting functional dependencies and minimal bases
  - advanced scripts
    - "We will try to cover using triggers, ternary logic, and simplifying queries for next sprint based on what is written in the module overview. As this has yet to be covered in lecture, results may differ from plan."
+ - indexing (missed from sprint 3)
+ - data normalization (sprint 2)
+
+
+talk about normalization, minimality and quality design
+create indexes, triggers (advanced scripting), isolation levels
 
 
 
