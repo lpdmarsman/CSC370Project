@@ -1,0 +1,5 @@
+drop read committed to ensure all drop updates apply for everyone instantly
+
+other joins read uncommitted to prioritize speed
+
+all other tables stay as repeatable read, as phantoms won't be a problem. if dirty reads were allowed, players might see that an item should drop, but if the value was updated at the wrong time they might not recieve the item
