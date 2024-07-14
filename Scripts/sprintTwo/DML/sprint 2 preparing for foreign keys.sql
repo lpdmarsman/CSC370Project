@@ -1,4 +1,4 @@
-UPDATE player
+UPDATE players
 SET guild_id = guild_id MOD 7,
 location_id = location_id MOD 10
 WHERE player_id >= 0;
