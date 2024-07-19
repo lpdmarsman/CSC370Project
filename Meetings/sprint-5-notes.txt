@@ -1,0 +1,24 @@
+Ternary Logic - Alex
+ - delete guilds and player guild id be null
+
+ - make new table for battle royale event (maybe? check logic) 
+   - set current location to null when player dies
+   - use coalesce to find the alive player with highest kill count
+
+
+
+
+Constraints - Howie
+ - drop rates between 0 and 1
+ - constraint amt attribute in player_attributes to between 0 and 100
+   - if amt is 0, delete
+
+Triggers - Claire 
+ - use triggers to verify status
+sql trigger
+create trigger char_offline 
+after update on players
+on each row
+update players set status = "inactive"
+   where New.isOnline = false;
+ - trigger default values on insert based on guild role
