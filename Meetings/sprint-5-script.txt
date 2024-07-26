@@ -1,0 +1,1 @@
+This sprint, triggers and constraints were created to: update a player's status to "inactive" if a player goes offline; delete a tuple if the player item's item count is less than 1; 

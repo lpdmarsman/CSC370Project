@@ -8,7 +8,7 @@ Ternary Logic - Alex
 
 Constraints - Howie
  - drop rates between 0 and 1
- - constraint amt attribute in player_items to between 0 and 100
+ - constraint amt attribute in player_items and 100
 
 
 Triggers - Claire 
