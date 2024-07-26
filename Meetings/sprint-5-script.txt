@@ -2,4 +2,8 @@ This sprint, triggers were created to update a player's status to "inactive" if 
 
 
 
-To improve the database, we could add a server table that has a foreign key in players to allow different instances of the game depending on the game server of their choice. This also helps with ensuring that there aren't too many players. (We will add snakes into the servers so we can ward off any invaders.) 
+Some improvements we would make to the database would be sharding, back-end code and denormalization.
+For sharding, we would implement geographical sharding by having the players table contain a new column containing geographical information. We would then proceed to split the players table based on this attribute, allowing for greater speed in retrieval of player information, as in our fantasy our game would be global, thus requiring multiple databases across the world.
+For back-end code, we would ideally program a back-end in Python or Java. Using our previous experience in python programming in SENG 265 and coops we could implement scripts to automatically add player information into our database, and also maintain our database integrity when MySQL can't.
+
+Lastly, we would look into denormalizing our database. Since we are using a OLAP model for our database, we are primarily concerned about analyzing our data and what patterns we can find/track. Denormalizing our database would allow us to perform less joins in order to find out important information we would be interested in. Additionally, denormalizing our database would allow us to add constraints that we normally can't in a normalized database in MySQL. For example, we could add a constraint in players, where only a certain quantity of players can enter a location. That way we could prevent a region from being overcrowded, leading to a better overall experience.
