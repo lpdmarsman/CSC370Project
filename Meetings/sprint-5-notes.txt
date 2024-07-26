@@ -6,19 +6,35 @@ Ternary Logic - Alex
    - use coalesce to find the alive player with highest kill count
 
 
-
-
 Constraints - Howie
  - drop rates between 0 and 1
- - constraint amt attribute in player_attributes to between 0 and 100
-   - if amt is 0, delete
+ - constraint amt attribute in player_items to between 0 and 100
+
 
 Triggers - Claire 
  - use triggers to verify status
-sql trigger
-create trigger char_offline 
-after update on players
-on each row
-update players set status = "inactive"
-   where New.isOnline = false;
- - trigger default values on insert based on guild role
+create trigger `char_offline`
+after update on `players`
+for each row
+update `players` set status = "inactive"
+	where New.`is_online` = false;
+
+ - delete tuple if player_item_amount is zero
+create trigger `item_dne`
+after update on `player_items`
+for each row
+delete from `players`
+	where NEW.`item_count` <= 0;
+
+
+
+
+
+
+
+
+
+
+
+
+
