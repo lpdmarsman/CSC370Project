@@ -1,1 +1,5 @@
-This sprint, triggers and constraints were created to: update a player's status to "inactive" if a player goes offline; delete a tuple if the player item's item count is less than 1; 
+This sprint, triggers were created to update a player's status to "inactive" if a player goes offline and delete a tuple if the player item's item count is less than 1. This covers back-end engineering. Constraints were created to ensure that drop rates cannot go above 100% or below 0%, and player item amount cannot be greater than 200. These cover data modelling. Ternary logic was also implemented via the coalesce function [something something something], which covers level 3 data modeling. Finally, we expressed our understanding of simplifying complex queries by creating something with several sub-queries, and showing that it can be reduced to a single query with no sub-queries. We also demonstrated that our complex query from sprint 2 could not be simplified further. This covers level 3 of data analytics. 
+
+
+
+To improve the database, we could add a server table that has a foreign key in players to allow different instances of the game depending on the game server of their choice. This also helps with ensuring that there aren't too many players. (We will add snakes into the servers so we can ward off any invaders.) 
