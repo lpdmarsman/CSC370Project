@@ -1,7 +1,8 @@
+
 create trigger `char_offline`
 after update on `players`
 for each row
-update `players` set status = "inactive"
+update `players` set `char_status` = "inactive"
    where New.`is_online` = false;
 
 create trigger `item_dne`

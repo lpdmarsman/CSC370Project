@@ -22,8 +22,7 @@ ROLLBACK;
 SET TRANSACTION ISOLATION LEVEL REPEATABLE READ;
 START TRANSACTION;
 
-UPDATE `players`
-SET `is_online` = true
-WHERE `player_id` = 8;
+INSERT INTO `buildings`
+VALUES (9, 'Shop', 'Cool Store');
 
 ROLLBACK;
