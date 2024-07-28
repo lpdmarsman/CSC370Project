@@ -1,4 +1,18 @@
-This sprint, triggers were created to update a player's status to "inactive" if a player goes offline and delete a tuple if the player item's item count is less than 1. This covers back-end engineering. Constraints were created to ensure that drop rates cannot go above 100% or below 0%, and player item amount cannot be greater than 200. These cover data modelling. Ternary logic was also implemented via the coalesce function [something something something], which covers level 3 data modeling. Finally, we expressed our understanding of simplifying complex queries by creating something with several sub-queries, and showing that it can be reduced to a single query with no sub-queries. We also demonstrated that our complex query from sprint 2 could not be simplified further. This covers level 3 of data analytics. 
+This sprint, triggers were created to update a player's status to "inactive" if a player goes offline and delete a tuple if the player item's item count is less than 1. This covers back-end engineering. Constraints were created to ensure that drop rates cannot go above 100% or below 0%, and player item amount cannot be greater than 200. These cover data modelling. 
+
+Ternary logic was also implemented via the coalesce function, which takes the NULL values of a column and replaces it with a value of our choosing; this covers level 3 data modeling. We expressed our understanding of simplifying complex queries by creating something with several sub-queries, and showing that it can be reduced to a single query with no sub-queries. 
+
+We also demonstrated that our complex query from sprint 2 could not be simplified further. Queries with outer joins were also done. This covers level 3 of data analytics. We then tested our code by performing a drop statement and ensuring that values properly cascaded, and included code to set our isolation levels.
+
+
+
+
+
+
+
+
+
+
 
 
 Some improvements we would make to the database would be sharding, back-end code and denormalization.

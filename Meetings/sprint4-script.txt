@@ -20,3 +20,12 @@ For sprint four, weak entity sets and subsets were added to the ERD, which cover
 
 
 For next sprint we are creating and using constraints, triggers, ternary logic, and simplifying queries, which fall under level 3 of data analytics. Constraints can be demonstrated by restricting drop rates to being between 0 and 1, not including 0 and including 1 — this covers [data analytics]. The usage of triggers can be verified by creating a trigger such that the player's status is set to "inactive" when the player is offline which also cover [data analytics]. Ternary logic can be verified by making queries that make use of a NULL value, which covers level 3 data modeling. Finally, Simplifying queries can be checked by writing a complex query that can be simplified, showing both the query before and after simplification shows level 3 data analytics.
+
+
+
+
+
+
+
+
+
