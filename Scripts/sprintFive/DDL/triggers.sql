@@ -1,4 +1,3 @@
-
 create trigger `char_offline`
 after update on `players`
 for each row

@@ -1,12 +1,3 @@
--- Foreign key creation for drops
-/*
-ALTER TABLE `Drops`
-ADD FOREIGN KEY (item_id) REFERENCES items(item_id)
-ON DELETE CASCADE;
-ALTER TABLE `Drops`
-ADD FOREIGN KEY (monster_id) REFERENCES monsters(monster_id)
-ON DELETE SET NULL;
-*/
 -- If we delete an item, the entry is deleted.
 SELECT *
 FROM `drops`
